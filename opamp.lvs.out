@@ -1,0 +1,204 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6MBC9T in circuit nmoscs2 (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_SJFSNB in circuit nmoscs2 (0)(4 instances)
+
+Class nmoscs2 (0):  Merged 8 parallel devices.
+Subcircuit summary:
+Circuit 1: nmoscs2                         |Circuit 2: nmoscs2                         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (12->4)            |sky130_fd_pr__nfet_01v8 (12->4)            
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: nmoscs2                         |Circuit 2: nmoscs2                         
+-------------------------------------------|-------------------------------------------
+d9                                         |D9                                         
+d8                                         |D8                                         
+gnd                                        |GND                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nmoscs2 and nmoscs2 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2ZH9AN in circuit pmoscs (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_SDE6B7 in circuit pmoscs (0)(4 instances)
+
+Class pmoscs (0):  Merged 9 parallel devices.
+Class pmoscs (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: pmoscs                          |Circuit 2: pmoscs                          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (16->7)            |sky130_fd_pr__pfet_01v8 (16->7)            
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: pmoscs                          |Circuit 2: pmoscs                          
+-------------------------------------------|-------------------------------------------
+D2                                         |D2                                         
+VDD                                        |VDD                                        
+D1                                         |D1                                         
+D5                                         |D5                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pmoscs and pmoscs are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_BHVYY6 in circuit differential (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2XUZHN in circuit differential (0)(8 instances)
+
+Class differential (0):  Merged 12 parallel devices.
+Subcircuit summary:
+Circuit 1: differential                    |Circuit 2: differential                    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (16->4)            |sky130_fd_pr__pfet_01v8 (16->4)            
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: differential                    |Circuit 2: differential                    
+-------------------------------------------|-------------------------------------------
+vpin                                       |VPIN                                       
+vin                                        |VIN                                        
+d5                                         |D5                                         
+vdd                                        |VDD                                        
+d6                                         |D6                                         
+out                                        |OUT                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes differential and differential are equivalent.
+Flattening unmatched subcell nmoscs in circuit opamp (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_Q6296P in circuit opamp (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_4HFSKE in circuit opamp (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_TC9PLT in circuit opamp (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_27FZYL in circuit opamp (0)(1 instance)
+
+Cell opamp (1) disconnected node: RS
+Class opamp (0):  Merged 4 parallel devices.
+Cell opamp (1) disconnected node: RS
+Subcircuit summary:
+Circuit 1: opamp                           |Circuit 2: opamp                           
+-------------------------------------------|-------------------------------------------
+nmoscs2 (1)                                |nmoscs2 (1)                                
+pmoscs (1)                                 |pmoscs (1)                                 
+differential (1)                           |differential (1)                           
+sky130_fd_pr__nfet_01v8 (8->4)             |(no matching element)                      
+Number of devices: 7 **Mismatch**          |Number of devices: 3 **Mismatch**          
+Number of nets: 10 **Mismatch**            |Number of nets: 9 **Mismatch**             
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: opamp                           |Circuit 2: opamp                           
+
+---------------------------------------------------------------------------------------
+Net: gnd                                   |Net: GND                                   
+  nmoscs2/gnd = 1                          |  nmoscs2/GND = 1                          
+  sky130_fd_pr__nfet_01v8/4 = 4            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: pmoscs_0/D1                           |Net: net1                                  
+  pmoscs/D1 = 1                            |  pmoscs/D2 = 1                            
+  sky130_fd_pr__nfet_01v8/2 = 3            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |                                           
+                                           |                                           
+Net: pmoscs_0/D2                           |Net: net3                                  
+  pmoscs/D2 = 1                            |  pmoscs/D5 = 1                            
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: rs                                    |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: pmoscs_0/D5                           |Net: net2                                  
+  pmoscs/D5 = 1                            |  pmoscs/D1 = 1                            
+  differential/d5 = 1                      |  differential/D5 = 1                      
+                                           |                                           
+Net: vin                                   |Net: VDD                                   
+  pmoscs/VDD = 1                           |  pmoscs/VDD = 1                           
+  differential/vdd = 1                     |  differential/VDD = 1                     
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: opamp                           |Circuit 2: opamp                           
+
+---------------------------------------------------------------------------------------
+Instance: nmoscs_0//sky130_fd_pr__nfet_01v |(no matching instance)                     
+  (1,3) = (5,1)                            |                                           
+  2 = 7                                    |                                           
+  4 = 6                                    |                                           
+                                           |                                           
+                                           |                                           
+Instance: nmoscs_0//sky130_fd_pr__nfet_01v |(no matching instance)                     
+  (1,3) = (7,6)                            |                                           
+  2 = 7                                    |                                           
+  4 = 6                                    |                                           
+                                           |                                           
+                                           |                                           
+Instance: nmoscs_0//sky130_fd_pr__nfet_01v |(no matching instance)                     
+  (1,3) = (7,7)                            |                                           
+  2 = 7                                    |                                           
+  4 = 6                                    |                                           
+                                           |                                           
+                                           |                                           
+Instance: nmoscs_0//sky130_fd_pr__nfet_01v |(no matching instance)                     
+  (1,3) = (5,5)                            |                                           
+  2 = 5                                    |                                           
+  4 = 6                                    |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: pmoscs_0                         |Instance: pmoscs:3                         
+  VDD = 2                                  |  VDD = 2                                  
+  D1 = 7                                   |  D1 = 2                                   
+  D2 = 5                                   |  D2 = 1                                   
+  D5 = 2                                   |  D5 = 1                                   
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: opamp                           |Circuit 2: opamp                           
+-------------------------------------------|-------------------------------------------
+gnd                                        |GND                                        
+Cell pin lists are equivalent.
+Device classes opamp and opamp are equivalent.
+
+Final result: Netlists do not match.
+Port matching may fail to disambiguate symmetries.
